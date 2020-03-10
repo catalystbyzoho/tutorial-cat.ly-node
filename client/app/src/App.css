@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  background: linear-gradient(to right, papayawhip 0%, thistle 100%);
+}
+
+.container {
+  margin: 0 auto;
+  width: 650px;
+}
+
+.header {
+  text-align: center;
+  color: #43494e;
+  font-family: "quicksand";
+  font-weight: 300;
+}
+
+.form__input {
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.4em;
+  height: 40px;
+  padding: 0 10px;
+  width: 500px;
+  outline: none;
+}
+
+.form__button {
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.4em;
+  float: right;
+  padding: 0;
+  line-height: 40px;
+  vertical-align: top;
+  width: 115px;
+  outline: none;
+}
+
+.url-list {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.url-item {
+  border-bottom: 2px solid #837c7c;
+  cursor: pointer;
+  line-height: 40px;
+  display: flex;
+  padding: 16px 20px;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.long-link {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 500px;
+}
+
+.short-link {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 500px;
+  padding-right: 35px;
+  position: relative;
+}
+
+.url-list-container {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.short-link::after {
+  font-size: 1.4em;
+  color: darkblue;
+  content: " ⤳";
+  position: absolute;
+  right: 0;
+}

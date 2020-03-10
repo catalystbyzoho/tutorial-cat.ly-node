@@ -1,0 +1,8 @@
+{
+  "short_name": "catly",
+  "name": "Url shortening service build on zoho catalyst",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
