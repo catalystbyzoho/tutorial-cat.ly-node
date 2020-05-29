@@ -1,19 +1,19 @@
 {
-  "applogic": {
-    "targets": [
-      "catly"
-    ],
-    "ignore": [],
-    "source": "applogic"
-  },
-  "client": {
-    "source": "client/app/build",
-    "ignore": [],
-    "scripts": {
-      "packageJson": "cd client && cp client-package.json app/build/",
-      "build":"cd client/app && yarn install && yarn build",
-      "preserve":"catalyst run build && catalyst run packageJson",
-      "predeploy":"catalyst run build && catalyst run packageJson"
-    }
-  }
+	"applogic": {
+		"targets": [
+			"catly"
+		],
+		"ignore": [],
+		"source": "applogic"
+	},
+	"client": {
+		"source": "client/app/build",
+		"ignore": [],
+		"scripts": {
+			"packageJson": "cd client && cp client-package.json app/build/",
+			"build": "cd client/app && yarn install && yarn build",
+			"preserve": "catalyst run client:build && catalyst run client:packageJson",
+			"predeploy": "catalyst run client:build && catalyst run client:packageJson"
+		}
+	}
 }
