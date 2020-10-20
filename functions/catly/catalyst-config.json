@@ -1,0 +1,10 @@
+{
+  "execution": {
+    "main": "handler.js"
+  },
+  "deployment": {
+    "name": "catly",
+    "stack": "node10",
+    "type": "advancedio"
+  }
+}

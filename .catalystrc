@@ -25,5 +25,11 @@
         }
       ]
     }
-  ]
+  ],
+  "migration": {
+    "1.0.2": {
+      "completed": true
+    },
+    "last_success": "1.0.2"
+  }
 }
