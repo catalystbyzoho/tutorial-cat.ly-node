@@ -14,7 +14,7 @@
 		"express": "^4.17.1",
 		"shortid": "^2.2.15",
 		"valid-url": "^1.0.9",
-		"zcatalyst-sdk-node": "1.3.1"
+		"zcatalyst-sdk-node": "latest"
 	},
 	"devDependencies": {
 		"eslint": "^6.5.0",
