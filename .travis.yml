@@ -15,7 +15,7 @@ jobs:
         - npm install
       after_success:
         - echo 'deploying functions!'
-        - catalyst deploy --only functions --project 700000000045014 --verbose --token m_1004.71b8c9a94eaa4d9fa88d80e80b225a0e.fa1f701cd56c711c16301c54c6920f63
+        - catalyst deploy --only functions --project <project-id> --verbose --token <cli-token>
     - stage: client
       before_script:
         - cd client/app
@@ -29,4 +29,4 @@ jobs:
         - cd build
       after_success:
         - echo 'deploying client!'
-        - catalyst deploy --only client --project 700000000045014 --verbose --token m_1004.71b8c9a94eaa4d9fa88d80e80b225a0e.fa1f701cd56c711c16301c54c6920f63
+        - catalyst deploy --only client --project <project-id> --verbose --token <cli-token>
