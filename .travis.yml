@@ -1,32 +1,32 @@
 language: node_js
 node_js:
-  - 8
+  - 12
 install:
   - npm install -g zcatalyst-cli
 jobs:
   include:
-    - stage: applogic
+    - stage: functions
       before_script:
-        - cd applogic/catly/server
+        - cd functions/catly
         - pwd
       script:
-        - echo 'applogic!!'
-        - echo 'Installing Deps!'
+        - echo 'functions!!'
+        - echo 'Installing Dependencies!'
         - npm install
       after_success:
-        - echo 'deploying applogic!'
-        - catalyst deploy --only applogic --project 700000000045014 --verbose
+        - echo 'deploying functions!'
+        - catalyst deploy --only functions --project 700000000045014 --verbose --token m_1004.71b8c9a94eaa4d9fa88d80e80b225a0e.fa1f701cd56c711c16301c54c6920f63
     - stage: client
       before_script:
         - cd client/app
         - pwd
       script:
         - echo 'client!!'
-        - echo 'Installing Deps!'
+        - echo 'Installing Dependencies!'
         - yarn install
         - yarn build
         - cp ../client-package.json build/.
         - cd build
       after_success:
         - echo 'deploying client!'
-        - catalyst deploy --only client --project 700000000045014 --verbose
+        - catalyst deploy --only client --project 700000000045014 --verbose --token m_1004.71b8c9a94eaa4d9fa88d80e80b225a0e.fa1f701cd56c711c16301c54c6920f63

@@ -1,35 +1,46 @@
 {
   "defaults": {
-    "project": 1,
+    "project": 2,
     "env": 1
   },
   "actives": {
-    "project": 1,
+    "project": 2,
     "env": 1
   },
   "projects": [
     {
       "idx": 1,
-      "id": 700000000045014,
-      "name": "catly",
+      "id": "1434000000184003",
+      "name": "catly-example",
       "domain": {
-        "id": 10016718615,
-        "name": "catly-683477585.development"
+        "id": "1007605260",
+        "name": "catly-example-63317358.development"
       },
       "env": [
         {
           "idx": 1,
-          "id": "683477585",
+          "id": "63317358",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "id": "1434000000210001",
+      "name": "catly-example1",
+      "domain": {
+        "id": "1007765703",
+        "name": "catly-example1-63317358.development"
+      },
+      "env": [
+        {
+          "idx": 1,
+          "id": "63317358",
           "name": "Development",
           "type": 3
         }
       ]
     }
-  ],
-  "migration": {
-    "1.0.2": {
-      "completed": true
-    },
-    "last_success": "1.0.2"
-  }
+  ]
 }
