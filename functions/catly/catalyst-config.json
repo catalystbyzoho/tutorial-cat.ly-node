@@ -1,6 +1,6 @@
 {
   "execution": {
-    "main": "handler.js"
+    "main": "index.js"
   },
   "deployment": {
     "name": "catly",
