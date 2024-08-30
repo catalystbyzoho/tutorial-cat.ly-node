@@ -7,7 +7,7 @@
 		"start": "nodemon index.js"
 	},
 	"keywords": [],
-	"author": "sbb357753@gmail.com",
+	"author": "solutions@zohocatalyst.com",
 	"license": "MIT",
 	"dependencies": {
 		"body-parser": "^1.19.0",
