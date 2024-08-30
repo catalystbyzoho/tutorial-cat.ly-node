@@ -4,7 +4,7 @@
   },
   "deployment": {
     "name": "catly",
-    "stack": "node10",
+    "stack": "node18",
     "type": "advancedio"
   }
 }
